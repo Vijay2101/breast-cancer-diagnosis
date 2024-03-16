@@ -24,7 +24,7 @@ You are expert in field of breast cancer, you solve queries of users
 """
 
 ## streamlit app
-st.set_page_config(layout="wide", page_title="Breast Cancer Awareness", page_icon="")
+st.set_page_config(layout="wide", page_title="Breast Cancer Diagnosis", page_icon="")
 st.title("BREAST CANCER DIAGNOSIS")
 
 
@@ -47,6 +47,7 @@ with col1:
     st.write('<h5>Machine Learning Models</h5>',unsafe_allow_html=True)
 
     st.write('In our study on breast cancer diagnosis, various machine learning models were trained and evaluated for their performance.')
+
     st.write('Among the models assessed, the AdaBoostClassifier stood out with the highest accuracy of 98.2%, establishing it as the top-performing model for breast cancer diagnosis in our research. ')
 
     models = [
@@ -147,6 +148,18 @@ with col1:
 
 
     st.image('model_acc.png', caption='')
+
+    
+    st.write('<h5>Tableau</h5>',unsafe_allow_html=True)
+
+    st.write('<h6>Overview:</h6>',unsafe_allow_html=True)
+    st.write('The goal of our analysis is to explore the characteristics of breast cancer tumors as represented in the dataset and uncover insights that could aid in diagnosis and treatment decisions.')
+
+    st.write('<h6>Key Findings:</h6>',unsafe_allow_html=True)
+    st.write("The dataset contains a total of 569 samples, with 212 (37.3%) being malignant and 357 (62.7%) being benign.The mean radius of malignant tumors is significantly larger than that of benign tumors, indicating that tumor size may be a key factor in classification.There are strong correlations between several features, such as radius and area, which is expected as these features are likely to be proportional.Features such as texture, smoothness, and concavity show noticeable differences between malignant and benign tumors, suggesting they could be important in distinguishing between the two.")
+    
+    st.write('<h6>Visualization:</h6>',unsafe_allow_html=True)
+    st.video('Tableau - Datathon 2024-03-16 11-47-36.mp4')
 
 
 with col2:
