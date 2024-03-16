@@ -46,17 +46,7 @@ with col1:
 
     st.write('<h5>Machine Learning Models</h5>',unsafe_allow_html=True)
 
-    st.write('In our study on breast cancer diagnosis, various machine learning models were trained and evaluated for their performance. The results revealed the following accuracies:')
-    st.markdown("""
-- Logistic Regression: 96.5%
-- Support Vector Classifier (SVC): 96.5%
-- K-Nearest Neighbors (KNN): 95.6%
-- Random Forest: 96.5%
-- XGBoost: 96.5%
-- CatBoost: 96.5%
-- LightGBM: 97.4%
-- AdaBoost: 98.2%
-""")
+    st.write('In our study on breast cancer diagnosis, various machine learning models were trained and evaluated for their performance.')
     st.write('Among the models assessed, the AdaBoostClassifier stood out with the highest accuracy of 98.2%, establishing it as the top-performing model for breast cancer diagnosis in our research. ')
 
     models = [
